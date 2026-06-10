@@ -12,33 +12,25 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="relative py-24">
+    <section id="features" className="relative py-24 border-b border-[#23272C]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionTitle
           eyebrow="Özellikler"
-          title={<>Satışlarınızı <span className="text-gradient-violet">otomatikleştirecek</span> her şey</>}
-          subtitle="Tek bir uygulamada, premium düzeyde tasarlanmış araç seti."
+          title={<>Satışlarınızı otomatikleştirecek her şey.</>}
+          subtitle="Tek bir uygulamada, kurumsal düzeyde tasarlanmış araç seti."
         />
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 border-l border-t border-[#23272C]">
           {features.map((f) => (
             <div
               key={f.title}
-              className="group surface-card rounded-2xl p-6 relative overflow-hidden transition-all duration-300 hover:-translate-y-1"
+              className="group p-7 border-r border-b border-[#23272C] bg-[#0B0C0E] hover:bg-[#141619] transition-colors"
             >
-              <div
-                className="pointer-events-none absolute -top-20 -right-20 h-48 w-48 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ background: "radial-gradient(closest-side, rgba(108,92,231,0.35), transparent 70%)", filter: "blur(40px)" }}
-                aria-hidden
-              />
-              <div
-                className="relative grid h-12 w-12 place-items-center rounded-xl"
-                style={{ background: "linear-gradient(135deg, rgba(108,92,231,0.25), rgba(72,52,212,0.15))", boxShadow: "inset 0 0 0 1px rgba(108,92,231,0.35)" }}
-              >
-                <f.icon className="h-5 w-5 text-[#B8AEFF]" />
+              <div className="grid h-10 w-10 place-items-center rounded-md border border-[#23272C] bg-[#141619] group-hover:border-[#FF7E36] transition-colors">
+                <f.icon className="h-[18px] w-[18px] text-foreground group-hover:text-[#FF7E36] transition-colors" />
               </div>
-              <h3 className="relative mt-5 font-display text-lg font-semibold">{f.title}</h3>
-              <p className="relative mt-2 text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+              <h3 className="mt-5 font-display text-base font-semibold">{f.title}</h3>
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
             </div>
           ))}
         </div>
