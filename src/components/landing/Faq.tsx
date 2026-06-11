@@ -9,11 +9,11 @@ const items = [
   },
   {
     q: "Aynı anda kaç hesap yönetebilirim?",
-    a: "Pro ve Elite paketlerimizde dilediğiniz kadar hesap ekleyebilir ve tek tıkla hesaplar arasında geçiş yapabilirsiniz.",
+    a: "Pro ve Business paketlerimizde birden fazla hesap ekleyebilir ve tek tıkla hesaplar arasında geçiş yapabilirsiniz.",
   },
   {
-    q: "Ödeme altyapısı güvenli mi?",
-    a: "Ödemeleriniz BDDK onaylı güvenli ödeme geçitleri aracılığıyla 256-bit SSL korumasıyla yasal olarak faturalandırılır.",
+    q: "Uygulama hangi işletim sistemlerinde çalışır?",
+    a: "Dolap Asistan şu anda Windows 10 ve Windows 11 ile tam uyumlu çalışmaktadır. Kurulumu birkaç dakika sürer ve teknik bilgi gerektirmez.",
   },
 ];
 
