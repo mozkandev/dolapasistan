@@ -19,13 +19,13 @@ export function HowItWorks() {
 
         <div className="mt-14 grid md:grid-cols-3 gap-5 relative">
           <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-px"
-               style={{ background: "linear-gradient(90deg, transparent, rgba(108,92,231,0.6), rgba(0,184,148,0.6), transparent)" }} />
+               style={{ background: "linear-gradient(90deg, transparent, rgba(210,174,108,0.6), rgba(69,184,137,0.6), transparent)" }} />
           {steps.map((s, i) => (
             <div key={s.title} className="surface-card relative rounded-2xl p-6 text-center">
               <div className="mx-auto relative grid h-14 w-14 place-items-center rounded-2xl"
-                   style={{ background: "linear-gradient(135deg,#6C5CE7,#4834D4)", boxShadow: "0 16px 40px -16px rgba(108,92,231,0.7)" }}>
-                <s.icon className="h-6 w-6 text-white" />
-                <span className="absolute -top-2 -right-2 h-6 w-6 rounded-full bg-[#090A0F] border border-white/10 text-[11px] grid place-items-center font-display font-semibold">
+                   style={{ background: "linear-gradient(135deg,#d2ae6c,#ae8a49)", boxShadow: "0 16px 40px -16px rgba(210,174,108,0.7)" }}>
+                <s.icon className="h-6 w-6 text-[#1a1205]" />
+                <span className="absolute -top-2 -right-2 h-6 w-6 rounded-full bg-[#0b1017] border border-white/10 text-[11px] grid place-items-center font-display font-semibold">
                   {i + 1}
                 </span>
               </div>

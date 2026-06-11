@@ -13,8 +13,8 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2.5">
               <div
-                className="grid h-9 w-9 place-items-center rounded-xl text-white font-bold"
-                style={{ background: "linear-gradient(135deg,#6C5CE7,#4834D4)" }}
+                className="grid h-9 w-9 place-items-center rounded-xl text-[#1a1205] font-bold"
+                style={{ background: "linear-gradient(135deg,#d2ae6c,#ae8a49)" }}
               >
                 D
               </div>

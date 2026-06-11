@@ -7,12 +7,12 @@ export function Security() {
         <div className="relative surface-card rounded-3xl overflow-hidden p-8 sm:p-12">
           <div
             className="pointer-events-none absolute -top-32 -left-20 h-72 w-[500px] rounded-full"
-            style={{ background: "radial-gradient(closest-side, rgba(0,184,148,0.35), transparent 70%)", filter: "blur(100px)" }}
+            style={{ background: "radial-gradient(closest-side, rgba(69,184,137,0.35), transparent 70%)", filter: "blur(100px)" }}
             aria-hidden
           />
           <div
             className="pointer-events-none absolute -bottom-32 -right-20 h-72 w-[500px] rounded-full"
-            style={{ background: "radial-gradient(closest-side, rgba(108,92,231,0.35), transparent 70%)", filter: "blur(100px)" }}
+            style={{ background: "radial-gradient(closest-side, rgba(210,174,108,0.35), transparent 70%)", filter: "blur(100px)" }}
             aria-hidden
           />
 
@@ -40,10 +40,10 @@ export function Security() {
 
             <div className="relative">
               <div className="relative mx-auto h-56 w-56">
-                <div className="absolute inset-0 rounded-full" style={{ background: "radial-gradient(closest-side, rgba(0,184,148,0.5), transparent 70%)", filter: "blur(40px)" }} />
+                <div className="absolute inset-0 rounded-full" style={{ background: "radial-gradient(closest-side, rgba(69,184,137,0.5), transparent 70%)", filter: "blur(40px)" }} />
                 <div
                   className="relative h-full w-full rounded-full grid place-items-center"
-                  style={{ background: "linear-gradient(135deg,#00B894,#55EFC4)", boxShadow: "0 30px 80px -20px rgba(0,184,148,0.6)" }}
+                  style={{ background: "linear-gradient(135deg,#45b889,#74d0a9)", boxShadow: "0 30px 80px -20px rgba(69,184,137,0.6)" }}
                 >
                   <ShieldCheck className="h-24 w-24 text-[#052e25]" strokeWidth={2.2} />
                 </div>

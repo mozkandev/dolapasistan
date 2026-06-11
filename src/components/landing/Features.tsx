@@ -28,14 +28,14 @@ export function Features() {
             >
               <div
                 className="pointer-events-none absolute -top-20 -right-20 h-48 w-48 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                style={{ background: "radial-gradient(closest-side, rgba(108,92,231,0.35), transparent 70%)", filter: "blur(40px)" }}
+                style={{ background: "radial-gradient(closest-side, rgba(210,174,108,0.35), transparent 70%)", filter: "blur(40px)" }}
                 aria-hidden
               />
               <div
                 className="relative grid h-12 w-12 place-items-center rounded-xl"
-                style={{ background: "linear-gradient(135deg, rgba(108,92,231,0.25), rgba(72,52,212,0.15))", boxShadow: "inset 0 0 0 1px rgba(108,92,231,0.35)" }}
+                style={{ background: "linear-gradient(135deg, rgba(210,174,108,0.25), rgba(174,138,73,0.15))", boxShadow: "inset 0 0 0 1px rgba(210,174,108,0.35)" }}
               >
-                <f.icon className="h-5 w-5 text-[#B8AEFF]" />
+                <f.icon className="h-5 w-5 text-[#e4c991]" />
               </div>
               <h3 className="relative mt-5 font-display text-lg font-semibold">{f.title}</h3>
               <p className="relative mt-2 text-sm text-muted-foreground leading-relaxed">{f.desc}</p>

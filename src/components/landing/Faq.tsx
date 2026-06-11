@@ -42,7 +42,7 @@ export function Faq() {
                     className="grid h-8 w-8 place-items-center rounded-full transition-transform"
                     style={
                       isOpen
-                        ? { background: "linear-gradient(135deg,#6C5CE7,#4834D4)" }
+                        ? { background: "linear-gradient(135deg,#d2ae6c,#ae8a49)" }
                         : { background: "rgba(255,255,255,0.05)" }
                     }
                   >

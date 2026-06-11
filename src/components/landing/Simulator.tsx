@@ -24,7 +24,7 @@ export function Simulator() {
         <div className="relative mt-12">
           <div
             className="pointer-events-none absolute -top-20 left-1/2 h-72 w-[700px] -translate-x-1/2 rounded-full"
-            style={{ background: "radial-gradient(closest-side, rgba(108,92,231,0.35), transparent 70%)", filter: "blur(80px)" }}
+            style={{ background: "radial-gradient(closest-side, rgba(210,174,108,0.35), transparent 70%)", filter: "blur(80px)" }}
             aria-hidden
           />
           <div className="surface-card relative rounded-3xl overflow-hidden">
@@ -44,7 +44,7 @@ export function Simulator() {
                       }`}
                       style={
                         isActive
-                          ? { background: "linear-gradient(135deg, rgba(108,92,231,0.18), rgba(72,52,212,0.12))", boxShadow: "inset 0 0 0 1px rgba(108,92,231,0.35)" }
+                          ? { background: "linear-gradient(135deg, rgba(210,174,108,0.18), rgba(174,138,73,0.12))", boxShadow: "inset 0 0 0 1px rgba(210,174,108,0.35)" }
                           : undefined
                       }
                     >
@@ -93,7 +93,7 @@ function TabAdd() {
                 <button
                   key={c}
                   onClick={() => setColor(c)}
-                  className={`h-8 w-8 rounded-full border transition-transform ${color === c ? "scale-110 ring-2 ring-offset-2 ring-offset-[#12131C] ring-[#6C5CE7]" : "border-white/10"}`}
+                  className={`h-8 w-8 rounded-full border transition-transform ${color === c ? "scale-110 ring-2 ring-offset-2 ring-offset-[#151d29] ring-[#d2ae6c]" : "border-white/10"}`}
                   style={{ background: c }}
                   aria-label={c}
                 />
@@ -110,7 +110,7 @@ function TabAdd() {
       <div className="flex items-start justify-center">
         <div
           className="relative w-[270px] rounded-[2rem] border border-white/10 p-3"
-          style={{ background: "linear-gradient(180deg,#0b0c14,#12131C)", boxShadow: "0 30px 80px -30px rgba(108,92,231,0.5)" }}
+          style={{ background: "linear-gradient(180deg,#0b1017,#151d29)", boxShadow: "0 30px 80px -30px rgba(210,174,108,0.5)" }}
         >
           <div className="rounded-[1.4rem] overflow-hidden surface-card">
             <div
@@ -142,7 +142,7 @@ function Input({ label, value, onChange }: { label: string; value: string; onCha
       <input
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="mt-1.5 w-full rounded-lg bg-white/[0.03] border border-white/10 px-3 py-2.5 text-sm outline-none focus:border-[#6C5CE7]/60 focus:ring-2 focus:ring-[#6C5CE7]/20 transition-all"
+        className="mt-1.5 w-full rounded-lg bg-white/[0.03] border border-white/10 px-3 py-2.5 text-sm outline-none focus:border-[#d2ae6c]/60 focus:ring-2 focus:ring-[#d2ae6c]/20 transition-all"
       />
     </div>
   );
@@ -185,7 +185,7 @@ function TabBot() {
         <p className="text-sm text-muted-foreground mt-1">Hesabınızın güvenliği için insan davranışını taklit edin.</p>
 
         <div className="mt-6 space-y-3">
-          <Setting icon={<Clock className="h-4 w-4 text-[#B8AEFF]" />} title="Akıllı Gecikme" value="30 – 120 sn" />
+          <Setting icon={<Clock className="h-4 w-4 text-[#e4c991]" />} title="Akıllı Gecikme" value="30 – 120 sn" />
           <Setting icon={<Coffee className="h-4 w-4 text-emerald-300" />} title="Mola Sistemi" value="5 üründe bir 10 dk mola" />
           <Setting icon={<Hourglass className="h-4 w-4 text-amber-300" />} title="Günlük Limit" value="Maks. 60 ürün / gün" />
         </div>
@@ -269,7 +269,7 @@ function TabQueue() {
         <div className="h-2 w-full rounded-full bg-white/5 overflow-hidden">
           <div
             className="h-full rounded-full"
-            style={{ width: `${progress}%`, background: "linear-gradient(90deg,#6C5CE7,#00B894)", boxShadow: "0 0 20px rgba(0,184,148,0.5)" }}
+            style={{ width: `${progress}%`, background: "linear-gradient(90deg,#d2ae6c,#45b889)", boxShadow: "0 0 20px rgba(69,184,137,0.5)" }}
           />
         </div>
       </div>
@@ -301,7 +301,7 @@ function StatusBadge({ status }: { status: "ok" | "loading" | "wait" }) {
     );
   if (status === "loading")
     return (
-      <span className="inline-flex items-center gap-1 rounded-full bg-violet-400/15 text-violet-200 border border-violet-400/30 px-2 py-1 text-[11px]">
+      <span className="inline-flex items-center gap-1 rounded-full bg-amber-400/15 text-amber-200 border border-amber-400/30 px-2 py-1 text-[11px]">
         <Loader2 className="h-3 w-3 animate-spin" /> Yükleniyor
       </span>
     );

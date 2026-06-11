@@ -7,12 +7,12 @@ export function Hero() {
       <div className="absolute inset-0 bg-grid opacity-60" aria-hidden />
       <div
         className="pointer-events-none absolute -top-32 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full"
-        style={{ background: "radial-gradient(closest-side, rgba(108,92,231,0.45), transparent 70%)", filter: "blur(60px)" }}
+        style={{ background: "radial-gradient(closest-side, rgba(210,174,108,0.45), transparent 70%)", filter: "blur(60px)" }}
         aria-hidden
       />
       <div
         className="pointer-events-none absolute top-40 right-0 h-[300px] w-[400px] rounded-full"
-        style={{ background: "radial-gradient(closest-side, rgba(0,184,148,0.35), transparent 70%)", filter: "blur(100px)" }}
+        style={{ background: "radial-gradient(closest-side, rgba(69,184,137,0.35), transparent 70%)", filter: "blur(100px)" }}
         aria-hidden
       />
 
@@ -20,7 +20,7 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           <div className="max-w-xl">
             <div className="glass inline-flex items-center gap-2 rounded-full px-3 py-1.5 text-xs font-medium text-muted-foreground">
-              <Sparkles className="h-3.5 w-3.5 text-[#B8AEFF]" />
+              <Sparkles className="h-3.5 w-3.5 text-[#e4c991]" />
               🔥 Yapay Zeka Destekli Yeni Nesil Dolap Otomasyonu
             </div>
 
@@ -45,8 +45,8 @@ export function Hero() {
 
             <div className="mt-8 flex items-center gap-3 text-sm text-muted-foreground">
               <div className="flex -space-x-2">
-                {["#6C5CE7", "#00B894", "#F59E0B", "#EC4899"].map((c) => (
-                  <div key={c} className="h-7 w-7 rounded-full border-2 border-[#090A0F]" style={{ background: c }} />
+                {["#d2ae6c", "#45b889", "#F59E0B", "#EC4899"].map((c) => (
+                  <div key={c} className="h-7 w-7 rounded-full border-2 border-[#0b1017]" style={{ background: c }} />
                 ))}
               </div>
               <div>
@@ -67,7 +67,7 @@ export function Hero() {
             >
               <div
                 className="absolute -inset-10 rounded-[2rem] opacity-70"
-                style={{ background: "radial-gradient(closest-side, rgba(108,92,231,0.5), transparent 70%)", filter: "blur(50px)" }}
+                style={{ background: "radial-gradient(closest-side, rgba(210,174,108,0.5), transparent 70%)", filter: "blur(50px)" }}
                 aria-hidden
               />
               <div className="surface-card relative rounded-2xl overflow-hidden shadow-2xl">
@@ -110,7 +110,7 @@ export function Hero() {
                         <span>Otomasyon hazır — şablon kaydedildi</span>
                       </div>
                       <div className="mt-3 h-1.5 w-full rounded-full bg-white/5 overflow-hidden">
-                        <div className="h-full w-3/4 rounded-full" style={{ background: "linear-gradient(90deg,#6C5CE7,#00B894)" }} />
+                        <div className="h-full w-3/4 rounded-full" style={{ background: "linear-gradient(90deg,#d2ae6c,#45b889)" }} />
                       </div>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ export function Hero() {
               {/* floating mini card */}
               <div className="surface-card absolute -bottom-8 -left-8 w-56 rounded-2xl p-3 shadow-xl animate-float hidden sm:block">
                 <div className="flex items-center gap-2">
-                  <div className="h-9 w-9 rounded-lg" style={{ background: "linear-gradient(135deg,#00B894,#55EFC4)" }} />
+                  <div className="h-9 w-9 rounded-lg" style={{ background: "linear-gradient(135deg,#45b889,#74d0a9)" }} />
                   <div>
                     <div className="text-xs font-medium">Bugün</div>
                     <div className="text-lg font-display font-semibold text-gradient-emerald">+38 satış</div>
