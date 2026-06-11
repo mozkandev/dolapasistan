@@ -4,6 +4,7 @@ import { useState } from "react";
 const links = [
   { label: "Özellikler", href: "#features" },
   { label: "Nasıl Çalışır?", href: "#how" },
+  { label: "Video", href: "#video" },
   { label: "Güvenlik", href: "#security" },
   { label: "Fiyatlandırma", href: "#pricing" },
   { label: "SSS", href: "#faq" },
@@ -17,8 +18,8 @@ export function Header() {
         <div className="glass flex items-center justify-between rounded-2xl px-4 py-3">
           <a href="#" className="flex items-center gap-2.5">
             <div
-              className="grid h-9 w-9 place-items-center rounded-xl text-white font-bold"
-              style={{ background: "linear-gradient(135deg,#6C5CE7,#4834D4)", boxShadow: "0 8px 24px -8px rgba(108,92,231,0.7)" }}
+              className="grid h-9 w-9 place-items-center rounded-xl text-[#1a1205] font-bold"
+              style={{ background: "linear-gradient(135deg,#d2ae6c,#ae8a49)", boxShadow: "0 8px 24px -8px rgba(210,174,108,0.7)" }}
             >
               D
             </div>

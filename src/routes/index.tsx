@@ -5,6 +5,7 @@ import { Simulator } from "@/components/landing/Simulator";
 import { Features } from "@/components/landing/Features";
 import { Security } from "@/components/landing/Security";
 import { HowItWorks } from "@/components/landing/HowItWorks";
+import { VideoDemo } from "@/components/landing/VideoDemo";
 import { Pricing } from "@/components/landing/Pricing";
 import { Faq } from "@/components/landing/Faq";
 import { Footer } from "@/components/landing/Footer";
@@ -23,7 +24,7 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <div className="relative min-h-screen overflow-x-clip" style={{ background: "#090A0F" }}>
+    <div className="relative min-h-screen overflow-x-clip" style={{ background: "#0b1017" }}>
       <Header />
       <main>
         <Hero />
@@ -31,6 +32,7 @@ function Index() {
         <Features />
         <Security />
         <HowItWorks />
+        <VideoDemo />
         <Pricing />
         <Faq />
       </main>
