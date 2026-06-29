@@ -3,7 +3,7 @@ import { Check, Sparkles } from "lucide-react";
 import { SectionTitle } from "./Simulator";
 
 const TELEGRAM_URL = "https://t.me/dolapasistan";
-const DOWNLOAD_URL = "/app.exe";
+const DOWNLOAD_URL = "https://github.com/mozkandev/dolapasistan/releases/download/v1.0.0/app.exe";
 
 const plans = [
   {
@@ -155,7 +155,6 @@ export function Pricing() {
                 ) : (
                   <a
                     href={DOWNLOAD_URL}
-                    download
                     className={`mt-8 inline-flex w-full items-center justify-center rounded-xl py-3 text-sm font-semibold transition-all ${
                       p.popular
                         ? "btn-violet btn-violet-hover"

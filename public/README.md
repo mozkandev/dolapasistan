@@ -2,14 +2,12 @@
 
 Buradaki dosyalar sitenin köküne (`/`) servis edilir.
 
-## app.exe ekleme
-Uygulamanın kurulum dosyasını **bu klasöre** `app.exe` adıyla koy:
+## İndirme linki
+Uygulama dosyası GitHub Releases üzerinden servis edilir:
 
-    public/app.exe
+    https://github.com/mozkandev/dolapasistan/releases/download/v1.0.0/app.exe
 
-Site yayına girince `https://siten.com/app.exe` adresinden inilebilir olur.
-Fiyatlandırma bölümündeki **"Ücretsiz Başla"** butonu bu dosyayı indirir
-(`<a href="/app.exe" download>`).
+Fiyatlandırma bölümündeki **"Ücretsiz Başla"** butonu bu linke yönlenir.
 
-> Not: Dosya adını değiştirirsen `src/components/landing/Pricing.tsx`
+> Not: Linki değiştirirsen `src/components/landing/Pricing.tsx`
 > içindeki `DOWNLOAD_URL` sabitini de güncelle.
