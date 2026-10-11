@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.impeccable/review/
+*.log
+dolapasistan-website.zip
+
+.wrangler/

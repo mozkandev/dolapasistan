@@ -1,0 +1,15 @@
+{
+  "name": "dolap-asistan-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180",
+    "build": "vite build && node scripts/check-seo.mjs",
+    "check:seo": "node scripts/check-seo.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4180"
+  },
+  "devDependencies": {
+    "vite": "8.2.2"
+  }
+}
